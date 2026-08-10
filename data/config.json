@@ -1,0 +1,8 @@
+{
+  "host": "127.0.0.1",
+  "port": 5050,
+  "game_duration_seconds": 900,
+  "min_players": 2,
+  "max_players": 4,
+  "default_spawn_room": "control_room"
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "flashlight",
+    "name": "Flashlight",
+    "type": "flashlight",
+    "description": "Helps reveal clues in dark rooms."
+  },
+  {
+    "id": "security_key",
+    "name": "Security Key",
+    "type": "key",
+    "description": "Unlocks the Security room.",
+    "target": "security"
+  },
+  {
+    "id": "access_card",
+    "name": "Access Card",
+    "type": "access_card",
+    "description": "Grants access to restricted archive systems.",
+    "target": "archive"
+  },
+  {
+    "id": "document_alpha",
+    "name": "Document Alpha",
+    "type": "document",
+    "description": "Contains part of the final escape clue."
+  },
+  {
+    "id": "repair_tool",
+    "name": "Repair Tool",
+    "type": "tool",
+    "description": "Used to repair the emergency generator."
+  },
+  {
+    "id": "exit_key",
+    "name": "Exit Key",
+    "type": "key",
+    "description": "Unlocks the final exit door.",
+    "target": "exit"
+  }
+]

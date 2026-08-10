@@ -1,0 +1,91 @@
+[
+  {
+    "id": "control_room",
+    "name": "Control Room",
+    "description": "The central room with access panels and emergency monitors.",
+    "connected_rooms": [
+      "laboratory",
+      "security",
+      "archive",
+      "generator"
+    ],
+    "puzzles": [
+      "control_sequence"
+    ],
+    "items": [],
+    "locked": false
+  },
+  {
+    "id": "laboratory",
+    "name": "Laboratory",
+    "description": "A dark lab with scattered notes and a damaged terminal.",
+    "connected_rooms": [
+      "control_room"
+    ],
+    "puzzles": [
+      "lab_code"
+    ],
+    "items": [
+      "flashlight"
+    ],
+    "locked": false
+  },
+  {
+    "id": "security",
+    "name": "Security",
+    "description": "Security consoles guard access to archived files.",
+    "connected_rooms": [
+      "control_room"
+    ],
+    "puzzles": [],
+    "items": [
+      "access_card"
+    ],
+    "locked": true,
+    "required_item": "security_key"
+  },
+  {
+    "id": "archive",
+    "name": "Archive",
+    "description": "A storage room filled with old reports and hidden clues.",
+    "connected_rooms": [
+      "control_room"
+    ],
+    "puzzles": [
+      "archive_riddle"
+    ],
+    "items": [
+      "document_alpha"
+    ],
+    "locked": true,
+    "required_item": "access_card"
+  },
+  {
+    "id": "generator",
+    "name": "Generator",
+    "description": "The emergency power generator is unstable.",
+    "connected_rooms": [
+      "control_room",
+      "exit"
+    ],
+    "puzzles": [
+      "generator_password"
+    ],
+    "items": [
+      "repair_tool"
+    ],
+    "locked": false
+  },
+  {
+    "id": "exit",
+    "name": "Exit",
+    "description": "The final locked door.",
+    "connected_rooms": [
+      "generator"
+    ],
+    "puzzles": [],
+    "items": [],
+    "locked": true,
+    "required_item": "exit_key"
+  }
+]

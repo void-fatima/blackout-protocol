@@ -1,0 +1,30 @@
+[
+  {
+    "id": "lab_code",
+    "type": "password",
+    "question": "Complete the code: 17 - 04 - ?",
+    "answer": "26",
+    "reward": "security_key"
+  },
+  {
+    "id": "control_sequence",
+    "type": "sequence",
+    "question": "Find the next number: 2, 4, 8, 16, ?",
+    "answer": "32",
+    "reward": null
+  },
+  {
+    "id": "archive_riddle",
+    "type": "riddle",
+    "question": "I speak without a voice and remember without a mind. What am I?",
+    "answer": "document",
+    "reward": "exit_key"
+  },
+  {
+    "id": "generator_password",
+    "type": "password",
+    "question": "Enter the emergency generator reset code.",
+    "answer": "0432",
+    "reward": null
+  }
+]
