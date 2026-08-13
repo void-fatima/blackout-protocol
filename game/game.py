@@ -31,13 +31,21 @@ class Game:
         return self.time_left() <= 0
 
     def move_player(self, player_id: str, target_room_id: str) -> bool:
-        player = self.players[player_id]
-        current_room = self.rooms[player.current_room_id]
+        player = self.players.get(player_id)
+        if player is None:
+            return False
+
+        current_room = self.rooms.get(player.current_room_id)
+        target_room = self.rooms.get(target_room_id)
+        if current_room is None or target_room is None:
+            return False
+
         if target_room_id not in current_room.connected_rooms:
             return False
-        target_room = self.rooms[target_room_id]
+
         inventory_ids = {item.item_id for item in player.inventory}
         if not target_room.can_enter(inventory_ids):
             return False
+
         player.current_room_id = target_room_id
         return True
